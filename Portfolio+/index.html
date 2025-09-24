@@ -1,0 +1,162 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kareem Gamal | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    </head>
+    <body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Kareem Gamal | Portfolio</h1>
+
+        <!-- Hamburger Button -->
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
+            </div>
+
+        <!-- Menu -->
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+        <div class="hero-text">
+            <h2>Hello, I'm <span class="name-highlight">Kareem</span><span class="wave">👋</span></h2>
+            <p class="headline">Fullstack Web Developer</p> 
+    
+            <!-- Skills with logos on a new line -->
+            <div class="skills">
+                <span><i class="devicon-html5-plain colored"></i> HTML</span>
+                <span><i class="devicon-css3-plain colored"></i> CSS</span>
+                <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                <span><i class="devicon-react-original colored"></i> React</span>
+                <span><i class="devicon-csharp-plain colored"></i> C#</span>
+                <span><i class="devicon-laravel-plain colored"></i> Laravel</span>
+                <span><i class="devicon-dotnetcore-plain colored"></i> .NET</span>
+                <span><i class="devicon-mysql-plain-wordmark"></i> MySQL</span>
+            </div>
+    
+            <button onclick="scrollToContact()">Hire Me</button>
+        </div>
+    
+        <div class="hero-image">
+            <img src="images/ProfessionalMe.jpg" alt="Kareem Photo" />
+        </div>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p class="aboutMe">
+        I’m Kareem, a passionate Fullstack Web Developer, who loves
+        turning ideas into fully functional, scalable, and user-friendly web applications. 
+        I specialize in building digital experiences using modern frameworks and 
+        clean code practices. <br>
+        I design and build modern Web Applications with clean code, scalability,
+        and user-friendly design. Passionate about creating digital solutions
+        that make an impact.
+        </p>
+
+        <div class="usp">
+        <h3>Unique Selling Point</h3>
+        <p>
+            I bring the rare ability to handle both <strong>Frontend elegance</strong> 
+            and <strong>Backend strength</strong>, crafting web solutions that are 
+            <strong>scalable, high-performing, and user-focused</strong>.  
+            Ensuring every project isn’t just functional — it’s future-ready.
+        </p>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="education">
+            <h2>Education</h2>
+        <div class="edu-card">
+            <h3>Bachelor’s in Computer and Communication Engineering</h3>
+            <p>Alexandria University – 2023</p>
+        </div>
+        <div class="edu-card">
+            <h3>Full-Stack Diploma, DEPI Certificate</h3>
+            <p>Fullstack .NET Web Development – Present</p>
+        </div>
+        <div class="edu-card">
+            <h3>Full-Stack Development, AMIT Certificate</h3>
+            <p>Fullstack React-PHP Web Development – 2025</p>
+        </div>
+    </section>
+
+        <!-- Projects -->
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+    
+        <div class="project-card">
+            <a href="http://localhost:5173/" target="_blank">
+            <img src="images/furniture.png" alt="Furniture Store Project">
+            </a>
+            <h3>Furniture Store Web App</h3>
+            <p>Built with React & Laravel</p>
+        </div>
+    
+        <div class="project-card">
+            <a href="projects/Task1 Hospital Reservation (Completed)/Index.html" target="_blank">
+            <img src="images/hospital.png" alt="Hospital System Project">
+            </a>
+            <h3>Al-Ahsa Hospital System</h3>
+            <p>Built with HTML5, CSS3, JavaScript</p>
+        </div>
+    
+        <div class="project-card">
+            <a href="projects/Task2 Browny Resume (Completed)/index.html" target="_blank">
+            <img src="images/resume.png" alt="Resume Project">
+            </a>
+            <h3>Browny Star Resume</h3>
+            <p>Built with UI/UX, HTML5, CSS3</p>
+        </div>
+    
+        <div class="project-card">
+            <a href="projects/Assignment 1 (Completed)/index.html" target="_blank">
+            <img src="images/dashboard.png" alt="School Dashboard Project">
+            </a>
+            <h3>School Dashboard System</h3>
+            <p>Built using HTML5 & CSS3</p>
+        </div>
+    
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Kareem Gamal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
