@@ -144,13 +144,40 @@
     <!-- Contact -->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
+        <form id="contactForm" action="https://formspree.io/f/meoroqjv" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
         </form>
-    </section>
+        <!-- Hidden success message -->
+        <p id="formSuccess" style="display: none; color: green; font-weight: bold;">
+            ✅ Thanks! Your message has been sent 🚀
+        </p>
+    </section>  
+
+    <!--JS For The Submitted Message-->
+    <script>
+        const form = document.getElementById("contactForm");
+        const successMsg = document.getElementById("formSuccess");
+
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { Accept: "application/json" },
+            });
+
+        if (response.ok) {
+            form.reset(); // clear inputs
+            successMsg.style.display = "block"; // show success message
+            } else {
+            alert("Oops! Something went wrong. Please try again.");
+            }
+        });
+    </script>
 
     <!-- Footer -->
     <footer>
